@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #060911;
+    font-family: creepster;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    color: white;
+    font-size: 2.4rem;
+    margin: 1rem 2rem;
+    padding: 0;
+}
+
+img {
+    margin-top: 1em;
+    opacity: 80%;
+    width: 40%;
+}
+
+.flex-img-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 8rem;
+    width: 80%;
+    height: 80%;
+}
+
+.shared-form {
+    background-color: #d9d9d9cc;
+    opacity: 80%;
+    height: 40vh;
+    width: 40vh;
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px #FFFFFF;
+}
