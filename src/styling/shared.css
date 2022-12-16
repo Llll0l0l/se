@@ -2,9 +2,20 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 80%;
+}
+
+.shared-login-signup {
+    height: 100%;
+}
+
+.flex-img-form {
+    height: 100%;
+}
+
 body {
     background: #060911;
-    font-family: creepster;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -13,6 +24,7 @@ body {
 
 h1 {
     color: white;
+    font-family: creepster;
     font-size: 2.4rem;
     margin: 1rem 2rem;
     padding: 0;
@@ -36,8 +48,129 @@ img {
 .shared-form {
     background-color: #d9d9d9cc;
     opacity: 80%;
-    height: 40vh;
-    width: 40vh;
+    height: 40%;
+    width: 40%;
     border-radius: 16px;
-    box-shadow: 0px 4px 4px #FFFFFF;
+    box-shadow: 0px 4px 4px #ffffff;
+    padding: 2rem;
+    margin-top: -2rem;
+}
+
+
+/* button part */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(30, 30, 30, 0.2);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 32px;
+    width: 80px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgba(6, 9, 17, 0.2);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked+.slider:before {
+    transform: translateX(70px);
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 20px;
+}
+
+.wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.login-text,
+.signup-text {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+.signup-text {
+    right: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.login-text {
+    top: 50%;
+    left: 20px;
+    transform: translate(0, -50%);
+}
+
+form input {
+    background-color: #d9d9d9;
+    width: 100%;
+    height: 2.5rem;
+    margin: -3rem 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 0 1rem;
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1rem;
+    color: rgba(59, 59, 59, 0.8);
+}
+
+form input:nth-of-type(5) {
+    margin-bottom: 2.5rem;
+}
+
+form>input:last-of-type {
+    margin-bottom: 2.5rem;
+}
+
+.wrapper-buttons input {
+    margin: 0.2rem 0;
+}
+
+#login,
+#signup {
+    background: #929294;
+}
+
+.wrapper-buttons input:last-of-type {
+    background: url("../assets/google-logo.png");
+    background-repeat: no-repeat;
+    background-size: 2.2rem;
+    background-position: center left 2.8rem;
 }

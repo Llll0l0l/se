@@ -1,0 +1,12 @@
+.login-form {
+    padding-top: 2.9rem;
+    /* padding-bottom: 0.3rem; */
+    text-align: center;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: white;
+    font-family: creepster;
+    font-size: 2.5rem;
+}

@@ -1,8 +1,10 @@
 import bunny from "../assets/signup_bunny.png";
 import "../styling/shared.css";
+import Login from './login'
+import Signup from './signup'
+import { useState } from "react";
 
 function Shared() {
-    
   const [loginPage, setLoginPage] = useState(true);
 
   return (
@@ -25,7 +27,7 @@ function Shared() {
               <span className="slider round"></span>
             </label>
           </div>
-          <h1>{loginPage ? "Login" : "Singup"}</h1>
+          <h2>{loginPage ? <Login /> : <Signup/>}</h2>
         </div>
       </div>
     </div>
